@@ -1,6 +1,6 @@
 # Task Management System
 
-Welcome to the Task Management System! This is a RESTful API built with Node.js, Express, and Sequelize, designed to manage tasks with PostgreSQL as the database. This README will guide you through setting up and running the backend annd frontend on your local machine.
+Welcome to the Task Management System! This is a Full Stack Application built with Node.js, Express, Sequelize, Typescript, React.js, Redux Toolkit designed to manage tasks with PostgreSQL as the database. This README will guide you through setting up and running the backend annd frontend on your local machine.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
@@ -55,15 +55,15 @@ Create a `.env` file in the root directory of the backend and add the following 
    to install the packages
          Please try to install the specified verions of packages for  smooth installation and running of application
 
-4. **Setup the Database now**:
+3. **Setup the Database now**:
    
    I have created the migration files just do in the same directory backend 
           run
 
         npm run db:migrate
-   This will only work when you have desired .env file as suggested above
+   This will only work when you have desired .env file and datasbe configuration as suggested above
 
-6. ** Run The Server**
+4. ** Run The Server**
    
          npm run dev
 
@@ -81,11 +81,11 @@ Create a `.env` file in the root directory of the backend and add the following 
     to install the packages
          Please try to install the specified verions of packages for  smooth installation and running of application
    
-3. **.env file**
+2. **.env file**
        make .env file add
 
        REACT_APP_API_URL='http://localhost:4000/auth'
-5. **Run the application**
+3. **Run the application**
 
        npm run dev
 
@@ -99,3 +99,4 @@ Create a `.env` file in the root directory of the backend and add the following 
    please note that use node version >20.18 to run the application in the latest version 
 
 # Thank you 
+
