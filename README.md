@@ -1,6 +1,6 @@
-# Task Management System - Backend
+# Task Management System
 
-Welcome to the backend of the Task Management System! This is a RESTful API built with Node.js, Express, and Sequelize, designed to manage tasks with PostgreSQL as the database. This README will guide you through setting up and running the backend on your local machine.
+Welcome to the Task Management System! This is a RESTful API built with Node.js, Express, and Sequelize, designed to manage tasks with PostgreSQL as the database. This README will guide you through setting up and running the backend annd frontend on your local machine.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
@@ -25,5 +25,77 @@ Before you begin, ensure you have the following installed on your machine:
 ## Environment Variables
 
 Create a `.env` file in the root directory of the backend and add the following environment variables:
+- **PORT**: The port on which the backend will run (default: 4000).
+- **NODE_ENV**: Set to `development` for local development.
+- **DB_USER**: PostgreSQL username (default: `postgres`).
+- **DB_PASSWORD**: PostgreSQL password (default: `aryan`).
+- **DB_NAME**: Name of the PostgreSQL database (default: `tasksmanagement`).
+- **DB_HOST**: Database host (default: `localhost`).
+- **DB_PORT**: PostgreSQL port (default: `5432`).
+- **JWT_SECRET**: Secret key for JSON Web Tokens.
+- **REFRESH_TOKEN_SECRET**: Secret key for refresh tokens.
+
+**Note**: Ensure your PostgreSQL server is running and the database user has the necessary permissions to create the `tasksmanagement` database.
+
+## Installation
+
+1. **Clone the Repository**:
+   Navigate to your desired directory and clone the repository:
+   ```bash
+   git clone https://github.com/aryananand27/task-management-assign.git
+
+2. **Move to the direrctory**:
+
+    Navigate to the backend folder using:
+
+       cd backend
+    use
+
+        npm install
+   to install the packages
+         Please try to install the specified verions of packages for  smooth installation and running of application
+
+4. **Setup the Database now**:
+   
+   I have created the migration files just do in the same directory backend 
+          run
+
+        npm run db:migrate
+   This will only work when you have desired .env file as suggested above
+
+6. ** Run The Server**
+   
+         npm run dev
+
+## Frontend Installation
+
+1. **Move to the direrctory**:
+
+   Navigate to the frontend folder using:
+
+        cd ..
+        cd frontend
+    use
+
+       npm install
+    to install the packages
+         Please try to install the specified verions of packages for  smooth installation and running of application
+   
+3. **.env file**
+       make .env file add
+
+       REACT_APP_API_URL='http://localhost:4000/auth'
+5. **Run the application**
+
+       npm run dev
+
+## Useful Link
+  -- Postman:
+      
+      https://www.postman.com/aryan2003/tasks-apis/collection/xkmshor/collection1?action=share&creator=32161965
 
 
+## NOTE: 
+   please note that use node version >20.18 to run the application in the latest version 
+
+# Thank you 
