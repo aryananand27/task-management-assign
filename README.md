@@ -1,6 +1,9 @@
 # Task Management System
 
-Welcome to the Task Management System! This is a Full Stack Application built with Node.js, Express, Sequelize, Typescript, React.js, Redux Toolkit designed to manage tasks with PostgreSQL as the database. This README will guide you through setting up and running the backend annd frontend on your local machine.
+Welcome to the **Task Management System**!  
+This is a **Full Stack Application** built with **Node.js**, **Express**, **Sequelize**, **TypeScript**, **React.js**, and **Redux Toolkit**, using **PostgreSQL** as the database. This README provides a clear, step-by-step guide to set up and run both the **backend** and **frontend** on your local machine.
+
+---
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
@@ -13,18 +16,31 @@ Welcome to the Task Management System! This is a Full Stack Application built wi
 - [Contributing](#contributing)
 - [License](#license)
 
+---
+
 ## Prerequisites
 
-Before you begin, ensure you have the following installed on your machine:
+Ensure the following are installed on your machine:
 
-- **Node.js** (v20.x or later recommended)
-- **npm** (comes with Node.js)
-- **PostgreSQL** (v12 or later)
-- **Git** (for cloning the repository)
+- **Node.js** (v20.18 or later recommended)
+- **npm** (included with Node.js)
+- **PostgreSQL** (v15 or later)
+- **Git**
+
+> **Tip**: Use [nvm](https://github.com/nvm-sh/nvm) to manage Node.js versions easily.
+
+---
 
 ## Environment Variables
 
 Create a `.env` file in the root directory of the backend and add the following environment variables:
+
+### Include this when you are setting up the docker
+- **POSTGRES_USER**:postgres
+- **POSTGRES_PASSWORD**:aryan
+- **POSTGRES_DB**:tasksmanagement
+- **POSTGRES_PORT**:5432
+
 - **PORT**: The port on which the backend will run (default: 4000).
 - **NODE_ENV**: Set to `development` for local development.
 - **DB_USER**: PostgreSQL username (default: `postgres`).
@@ -44,59 +60,73 @@ Create a `.env` file in the root directory of the backend and add the following 
    ```bash
    git clone https://github.com/aryananand27/task-management-assign.git
 
-2. **Move to the direrctory**:
+## Running the Backend:
+**1. Navigate to Backend**
 
-    Navigate to the backend folder using:
+   Navigate to the backend folder using:
 
-       cd backend
-    use
+        cd backend
+    
+**2. Install Dependencies**
 
         npm install
-   to install the packages
-         Please try to install the specified verions of packages for  smooth installation and running of application
-
-3. **Setup the Database now**:
    
-   I have created the migration files just do in the same directory backend 
-          run
+   ### Use the exact package versions from package.json to avoid compatibility issues.
 
+**3. Run Database Migrations**:
+   
+   #### I have created the migration files just follow in the same directory i.e. /backend and run
+          
         npm run db:migrate
-   This will only work when you have desired .env file and datasbe configuration as suggested above
 
-4. ** Run The Server**
+   ### This creates the necessary tables in the tasksmanagement database. This will only work when you have desired .env file and database configuration as suggested above
+
+**4. Start the Backend Server**
    
          npm run dev
 
-## Frontend Installation
+   ### Server will run at: http://localhost:4000
 
-1. **Move to the direrctory**:
+## Running the Frontend
+
+**1. Navigate to Frontend**
 
    Navigate to the frontend folder using:
 
         cd ..
         cd frontend
-    use
+  
+**2. Install Dependencies**
 
-       npm install
-    to install the packages
-         Please try to install the specified verions of packages for  smooth installation and running of application
+        npm install
    
-2. **.env file**
-       make .env file add
+**3. Create .env File**
+       In the frontend root, create a .env file:
 
-       REACT_APP_API_URL='http://localhost:4000/auth'
-3. **Run the application**
+       REACT_APP_API_URL='http://localhost:4000/api'
 
-       npm run dev
+**4. Start the Frontend**
+   
+         npm run dev
 
-## Useful Link
-  -- Postman:
-      
-      https://www.postman.com/aryan2003/tasks-apis/collection/xkmshor/collection1?action=share&creator=32161965
+   ### Frontend will run at: http://localhost:5173
 
+   
+
+## API Endpoints
+
+   Test APIs using the provided Postman Collection:
+    
+   ### Postman Collection Link : https://www.postman.com/aryan2003/tasks-apis/collection/xkmshor/collection1?action=share&creator=32161965
+
+   ### Base URL Used: http://localhost:4000/api
+   
 
 ## NOTE: 
-   please note that use node version >20.18 to run the application in the latest version 
+   * Use Node.js v20.18+ to avoid compatibility issues.
+   * Ensure PostgreSQL is running before starting migrations.
+   * For production, use secure secrets and environment-specific configs.
 
-# Thank you 
+## Thank You! 🙌
+   Built by Aryan Anand 
 
