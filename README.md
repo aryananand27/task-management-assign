@@ -94,20 +94,11 @@ Create a `.env` file in the root directory of the backend and add the following 
       
       https://www.postman.com/aryan2003/tasks-apis/collection/xkmshor/collection1?action=share&creator=32161965
 
-Useful Links
-
-Postman Collection
-GitHub Repository
-Live Demo (if deployed) Add later
-
-
-Thank You! 🙌
-Built with ❤️ by Aryan Anand
-
 
 ## NOTE: 
    please note that use node version >20.18 to run the application in the latest version 
 
 # Thank you 
+
 
 
