@@ -51,7 +51,7 @@ Create a `.env` file in the root directory of the backend and add the following 
 - **JWT_SECRET**: Secret key for JSON Web Tokens.
 - **REFRESH_TOKEN_SECRET**: Secret key for refresh tokens.
 
-**Note**: Ensure your PostgreSQL server is running and the database user has the necessary permissions to create the `tasksmanagement` database.
+> **Note**: Ensure your PostgreSQL server is running and the database user has the necessary permissions to create the `tasksmanagement` database.
 
 ## Installation
 
@@ -60,38 +60,41 @@ Create a `.env` file in the root directory of the backend and add the following 
    ```bash
    git clone https://github.com/aryananand27/task-management-assign.git
 
-## Running the Backend:
-**1. Navigate to Backend**
+---
 
-   Navigate to the backend folder using:
+
+## Running the Backend:
+
+**1. Navigate to Backend**
+       Navigate to the backend folder using:
 
         cd backend
     
 **2. Install Dependencies**
 
         npm install
-   
-   ### Use the exact package versions from package.json to avoid compatibility issues.
+ Use the exact package versions from package.json to avoid compatibility issues.
 
 **3. Run Database Migrations**:
-   
-   #### I have created the migration files just follow in the same directory i.e. /backend and run
+        I have created the migration files just follow in the same directory i.e. /backend and run
           
         npm run db:migrate
-
-   ### This creates the necessary tables in the tasksmanagement database. This will only work when you have desired .env file and database configuration as suggested above
+      
+   ###### This creates the necessary tables in the tasksmanagement database. This will only work when you have desired .env file and database configuration as suggested above
 
 **4. Start the Backend Server**
    
          npm run dev
 
-   ### Server will run at: http://localhost:4000
+   ###### Server will run at: http://localhost:4000
+
+---
+
 
 ## Running the Frontend
 
 **1. Navigate to Frontend**
-
-   Navigate to the frontend folder using:
+        Navigate to the frontend folder using:
 
         cd ..
         cd frontend
@@ -109,18 +112,20 @@ Create a `.env` file in the root directory of the backend and add the following 
    
          npm run dev
 
-   ### Frontend will run at: http://localhost:5173
+   ###### Frontend will run at: http://localhost:5173
 
-   
+---
+
 
 ## API Endpoints
 
    Test APIs using the provided Postman Collection:
     
-   ### Postman Collection Link : https://www.postman.com/aryan2003/tasks-apis/collection/xkmshor/collection1?action=share&creator=32161965
+   ###### Postman Collection Link : https://www.postman.com/aryan2003/tasks-apis/collection/xkmshor/collection1?action=share&creator=32161965
 
-   ### Base URL Used: http://localhost:4000/api
+   ###### Base URL Used: http://localhost:4000/api
    
+---
 
 ## NOTE: 
    * Use Node.js v20.18+ to avoid compatibility issues.
