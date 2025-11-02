@@ -6,6 +6,8 @@ backend/dist/
 frontend/dist/
 backend/build/
 frontend/build/
+frontend/.dockerignore
+backend/.dockerignore
 
 backend/.env
 frontend/.env
